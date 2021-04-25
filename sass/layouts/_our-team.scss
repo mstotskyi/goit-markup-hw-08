@@ -1,0 +1,11 @@
+.our-team {
+  background-color: var(--light_bg-color);
+}
+
+.our-team__list {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  line-height: 1.187;
+  text-align: center;
+}

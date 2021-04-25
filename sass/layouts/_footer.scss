@@ -1,0 +1,30 @@
+.footer {
+  background-color: var(--dark-bg-color);
+}
+
+.footer__logo {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.footer__container {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.address {
+  color: var(--main-title-color);
+}
+.address__link {
+  display: block;
+  padding-top: 9px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.social-footer,
+.footer__contacts {
+  flex-basis: calc((50% - 45px) / 2);
+}
