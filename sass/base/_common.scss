@@ -7,6 +7,7 @@ html {
   box-sizing: inherit;
 }
 body {
+  position: relative;
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
   line-height: 1.71;
@@ -26,6 +27,7 @@ body {
 }
 
 .current,
+.menu__current,
 .link:hover,
 .link:focus {
   color: var(--accent-text-color);
@@ -69,8 +71,12 @@ img {
 }
 
 .section {
-  padding-bottom: 94px;
-  padding-top: 94px;
+  padding-bottom: 60px;
+  padding-top: 60px;
+  @media screen and(min-width:1200px) {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
 }
 
 .section-title {

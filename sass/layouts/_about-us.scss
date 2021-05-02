@@ -1,5 +1,9 @@
 .about-us {
   padding-top: 0;
+
+  @media screen and (max-width: 1199.99px) {
+    display: none;
+  }
 }
 
 .about-us__item + .about-us__item {

@@ -1,6 +1,10 @@
 .header {
-  height: 80px;
+  height: 60px;
   border-bottom: 1px solid #ececec;
+
+  @media screen and (min-width: 768px) {
+    height: 80px;
+  }
 }
 
 .header__container {
@@ -9,6 +13,13 @@
   justify-content: space-between;
   padding-top: 0;
   padding-bottom: 0;
+
+  @media screen and (max-width: 767px) {
+    .header__links,
+    .header__contacts {
+      display: none;
+    }
+  }
 }
 
 .header__nav {
@@ -21,8 +32,10 @@
   margin-left: -50px;
 }
 .header__contacts {
-  display: flex;
-  align-items: center;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .header__item {
@@ -31,6 +44,17 @@
 
   &:first-child {
     margin-left: 0;
+  }
+}
+
+.header__contact-item {
+  position: relative;
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 50px;
+    &:first-child {
+      margin-left: 0;
+    }
   }
 }
 
